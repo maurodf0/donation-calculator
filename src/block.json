@@ -16,6 +16,10 @@
       "type": "number",
       "default": 5
     }
+    "doggoPrice": {
+      "type": "number",
+      "default": 10
+    }
  },
 	"textdomain": "donation-calculator",
 	"editorScript": "file:./index.js",

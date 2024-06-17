@@ -70,13 +70,16 @@ __webpack_require__.r(__webpack_exports__);
     get show() {
       const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
       return context.contribution > 0;
+    },
+    get dogSaved() {
+      const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
+      return `$${context.dogSaved}`;
     }
   },
   actions: {
     calculate: e => {
       const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
       context.contribution = Number(e.target.value);
-      console.log(context);
     }
   }
 });

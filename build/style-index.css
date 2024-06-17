@@ -1,1 +1,60 @@
-.wp-block-create-block-donation-calculator{background:rgba(255,255,0,.102);font-size:1em;padding:1em}
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-donation-calculator {
+  font-size: 1em;
+  background: rgba(255, 255, 0, 0.1019607843);
+  padding: 1em;
+}
+
+.wp-block-create-block-donation-calculator {
+  box-sizing: border-box;
+  background-color: #f2fcf6;
+  color: #023a51;
+  border: 3px solid #023a51;
+  border-radius: 1.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+.wp-block-create-block-donation-calculator .calculator {
+  padding: 3rem 2rem;
+}
+.wp-block-create-block-donation-calculator .calculator-input {
+  margin: 1.25rem auto;
+  font-size: 1.75rem;
+  color: #023a51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-create-block-donation-calculator .calculator-input-form {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border: 2px solid #023a51;
+  border-radius: 1rem;
+  background-color: #fff;
+  font-size: 1.5rem;
+  color: #023a51;
+  max-width: 130px;
+}
+.wp-block-create-block-donation-calculator .calculator-output {
+  display: none;
+}
+.wp-block-create-block-donation-calculator .calculator-output.show {
+  display: block;
+}
+.wp-block-create-block-donation-calculator .calculator-output span {
+  color: #f2fcf6;
+  background: #0cab49;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

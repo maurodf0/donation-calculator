@@ -3,7 +3,7 @@
  */
 import { store, getContext } from '@wordpress/interactivity';
 
-store( 'create-block', {
+store( 'donation-plugin', {
 	actions: {
 		toggle: () => {
 			const context = getContext();

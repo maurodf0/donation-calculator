@@ -71,14 +71,15 @@ __webpack_require__.r(__webpack_exports__);
       const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
       return context.contribution > 0;
     },
-    get dogSaved() {
+    get doggoSaved() {
       const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
-      return `$${context.dogSaved}`;
+      return Math.floor(context.contribution / context.doggoPrice);
     }
   },
   actions: {
     calculate: e => {
       const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
+      console.log('api');
       context.contribution = Number(e.target.value);
     }
   }

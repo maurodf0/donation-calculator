@@ -1,14 +1,14 @@
 <?php
-$context = array(
+$aaa = array(
   	'price' => (int)$attributes['price'],
-  	'contribution' => 0
+  	'contribution' => 0,
 	'doggoPrice' => (int)$attributes['doggoPrice']
 );
 ?>
 
 <div 
 	data-wp-interactive="donation-calculator"
-	<?php echo wp_interactivity_data_wp_context( $context ); ?>
+	<?php echo wp_interactivity_data_wp_context( $aaa ); ?>
 	<?php echo get_block_wrapper_attributes(); ?>
 >
 	<form aria-label="<?php esc_attr_e( 'Calculate the impact of your donation.' ); ?>" class="calculator">

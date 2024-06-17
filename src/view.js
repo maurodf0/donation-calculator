@@ -24,7 +24,6 @@ store( 'donation-calculator', {
 			const context = getContext();
 			console.log('api');
 			context.contribution = Number( e.target.value );
-		
 		}
 	}
 } );

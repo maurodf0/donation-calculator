@@ -17,13 +17,14 @@ store( 'donation-calculator', {
 		get doggoSaved() {
 			const context = getContext();
 			return Math.floor( context.contribution / context.doggoPrice );
-		}
+		  }
 	},
 	actions: {
 		calculate: ( e ) => {
 			const context = getContext();
+			console.log('api');
 			context.contribution = Number( e.target.value );
-			console.log(context);
+		
 		}
 	}
 } );

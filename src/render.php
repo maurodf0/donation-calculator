@@ -28,7 +28,7 @@ $context = array(
         >
 			<?php
 			echo sprintf(
-			    esc_html__( 'Your %s donation will enable us to plant %s trees or save 10 doggos.' ),
+			    esc_html__( 'Your %s donation will enable us to plant %s trees or save 104 doggos.' ),
 			    '<span data-wp-text="state.donation"></span>',
 				'<span data-wp-text="state.trees"></span>',
 				'<span data-wp-text="state.doggoSaved"></span>'

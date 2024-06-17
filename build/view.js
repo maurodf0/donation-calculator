@@ -56,24 +56,27 @@ var __webpack_exports__ = {};
   \*********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/interactivity */ "@wordpress/interactivity");
-/**
- * WordPress dependencies
- */
 
-(0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)('donation-plugin', {
-  actions: {
-    toggle: () => {
+(0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)('donation-calculator', {
+  state: {
+    get donation() {
       const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
-      context.isOpen = !context.isOpen;
+      return `$${context.contribution}`;
+    },
+    get trees() {
+      const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
+      return Math.floor(context.contribution / context.price);
+    },
+    get show() {
+      const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
+      return context.contribution > 0;
     }
   },
-  callbacks: {
-    logIsOpen: () => {
-      const {
-        isOpen
-      } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
-      // Log the value of `isOpen` each time it changes.
-      console.log(`Is open: ${isOpen}`);
+  actions: {
+    calculate: e => {
+      const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
+      context.contribution = Number(e.target.value);
+      console.log(context);
     }
   }
 });

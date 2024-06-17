@@ -1,20 +1,25 @@
-/**
- * WordPress dependencies
- */
 import { store, getContext } from '@wordpress/interactivity';
 
-store( 'donation-plugin', {
-	actions: {
-		toggle: () => {
+store( 'donation-calculator', {
+	state: {
+		get donation() {
 			const context = getContext();
-			context.isOpen = ! context.isOpen;
+			return `$${context.contribution}`;
 		},
-	},
-	callbacks: {
-		logIsOpen: () => {
-			const { isOpen } = getContext();
-			// Log the value of `isOpen` each time it changes.
-			console.log( `Is open: ${ isOpen }` );
+		get trees() {
+			const context = getContext();
+			return Math.floor( context.contribution / context.price );
 		},
+		get show() {
+			const context = getContext();
+    		return context.contribution > 0;
+		}
 	},
+	actions: {
+		calculate: ( e ) => {
+			const context = getContext();
+			context.contribution = Number( e.target.value );
+			console.log( context );
+		}
+	}
 } );

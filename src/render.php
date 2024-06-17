@@ -2,6 +2,7 @@
 $context = array(
   	'price' => (int)$attributes['price'],
   	'contribution' => 0
+	'doggoPrice' => (int)$attributes['doggoPrice']
 );
 ?>
 
@@ -27,10 +28,10 @@ $context = array(
         >
 			<?php
 			echo sprintf(
-			    esc_html__( 'Your %s donation will enable us to plant %s trees or save %s doggos.' ),
+			    esc_html__( 'Your %s donation will enable us to plant %s trees or save 10 doggos.' ),
 			    '<span data-wp-text="state.donation"></span>',
 				'<span data-wp-text="state.trees"></span>',
-				'<span data-wp-text="state.dogSaved"></span>'
+				'<span data-wp-text="state.doggoSaved"></span>'
 			);?>
 		</output>
 	</form>

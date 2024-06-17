@@ -15,7 +15,7 @@
     "price": {
       "type": "number",
       "default": 5
-    }
+    },
     "doggoPrice": {
       "type": "number",
       "default": 10
